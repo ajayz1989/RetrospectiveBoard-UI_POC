@@ -1,0 +1,70 @@
+
+<div class="col-md-12">
+	<div class="page-header">
+		<h2 id="tables">List</h2>
+	</div>
+
+	<!-- Search Box Implementation -->
+	<form class="form-inline">
+		<div class="form-group">
+			<label>Search</label> <input type="text" ng-model="search"
+				class="form-control" placeholder="Search">
+		</div>
+
+		<div class="pull-right">
+			<input type="button" class="btn btn-success"
+				ng-click="openAddBoardModal($event)" value="Create New Board">
+		</div>
+
+	</form>
+
+	<!-- Displaying the List Data -->
+	<div class="bs-component">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th ng-click="sort('id')">Id <span class="glyphicon sort-icon"
+						ng-show="sortKey=='id'"
+						ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					<th ng-click="sort('boardName')">Board Name <span
+						class="glyphicon sort-icon" ng-show="sortKey=='boardName'"
+						ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					<th ng-click="sort('boardDescription')">Board Description <span
+						class="glyphicon sort-icon" ng-show="sortKey=='boardDescription'"
+						ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					</th>
+					<th ng-click="sort('creationDate')">Creation Date <span
+						class="glyphicon sort-icon" ng-show="sortKey=='creationDate'"
+						ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					<th>Created By</span>
+				</tr>
+			</thead>
+			<tbody>
+				<tr
+					dir-paginate="user in users|filter:search|itemsPerPage:usersPerPage"
+					total-items="totalUsers" current-page="pagination.current">
+					<td>{{user.id}}</td>
+					<td>{{user.board_name}}</td>
+					<td>{{user.board_description}}</td>
+					<td>{{user.creation_date}}</td>
+					<td>{{user.createdBy}}</td>
+
+					<td><img src="assets/images/button_cancel22.png" class="edit"
+						title="delete"
+						ng-click="testMethod('clicked delete for ', user.id)">
+						&nbsp;&nbsp;&nbsp; <img src="assets/images/14_pencil.png"
+						class="edit" title="edit" ng-if="showIt"
+						ng-click="openBoardModal($event,user)"> <!-- testMethod('clicked edit for ', user.id) -->
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+		<dir-pagination-controls on-page-change="pageChanged(newPageNumber)"></dir-pagination-controls>
+	</div>
+
+</div>

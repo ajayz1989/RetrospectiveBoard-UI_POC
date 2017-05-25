@@ -1,0 +1,245 @@
+a.dropdown-toggle {
+	width: inherit;
+	height: 50px;
+}
+
+/*css for footer social network links */
+footer ul.quicklinks {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	text-transform: none;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 40px;
+}
+
+footer ul.social-buttons {
+	margin-bottom: 0;
+}
+
+footer ul.social-buttons li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	outline: 0;
+	color: #00a65a;
+	background-color: #fff;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+footer ul.social-buttons li a:hover,footer ul.social-buttons li a:focus,footer ul.social-buttons li a:active
+	{
+	background-color: #222;
+}
+
+/* # Empty CSS file for your own CSS */
+.dropdown_extended {
+	display: block;
+	width: 100%;
+	height: 304px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s
+		ease-in-out 0s;
+}
+
+/* # Footer css style in Index.html */
+.footer-basic-centered {
+	position: inherit;
+	background-color: #00a65a; /*#00a65a,#3c8dbc */
+	bottom: 0px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+	padding: 2%;
+	clear: both;
+	border-top: 0px solid #00a65a;
+	overflow: inherit;
+	background-attachment: fixed;
+}
+
+/* .footer-basic-centered .footer-company-motto{
+	color:  #ffffff;
+	font-size: 20px;
+	margin: 0;
+} */
+.footer-basic-centered .footer-company-name {
+	padding-top: 5px;
+	color: #ffffff;
+	font-size: 12px;
+	margin: 0;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media only screen and (min-width:200px) and (max-width: 640px) and
+	(-webkit-min-device-pixel-ratio: 2) {
+	.footer-basic-centered {
+		position: inherit;
+		bottom: 0px;
+	}
+	.footer-basic-centered .footer-company-motto {
+		font-size: 18px;
+	}
+	.footer-basic-centered .footer-company-name {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:640px) {
+	.footer-basic-centered {
+		/* position: absolute; */
+		bottom: 0px;
+	}
+}
+
+@media ( max-width : 767px) .main-header .navbar {
+	margin
+	:
+	 
+	0;
+}
+
+@media ( max-width : 767px) .main-header .logo , . main-header .navbar {
+	width
+	:
+	 
+	100%;
+	float
+	:
+	 
+	none
+	;
+	
+
+}
+
+.main-header>.navbar {
+	border: none;
+	min-height: 50px;
+	border-radius: 0;
+}
+
+/* # Login template css style in Login.html */
+.login-box {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.panel-heading {
+	padding: 5px 15px;
+}
+
+.panel-footer {
+	padding: 15px 15px;
+	color: #A0A0A0;
+}
+
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+/* image circle in header bar */
+.navbar-nav>.user-menu .user-image {
+	float: left;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-top: -2px;
+}
+
+@media ( max-width : 767px) {
+	.navbar-nav>.user-menu .user-image {
+		float: none;
+		margin-right: 0;
+		margin-top: -8px;
+		line-height: 10px;
+	}
+	.widget-user .widget-user-image {
+		position: absolute;
+		top: 65px;
+		left: 50%;
+		margin-left: -45px;
+	}
+	.widget-user .widget-user-image>img {
+		width: 90px;
+		height: auto;
+		border: 3px solid #fff;
+	}
+	.navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
+		z-index: 5;
+		height: 90px;
+		width: 90px;
+		border: 3px solid;
+		border-color: transparent;
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+	.body-container {
+		position: relative;
+		min-height: 70%;
+		width: 100%;
+	}
+
+	/* css for delete & edit icon inside table @viewBoards/viewTeams */
+	img.edit {
+		width: 22;
+		height: 22px;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.leftMenu-TopSpace {
+		margin-top: 100px
+	}
+}
+
+ .navbar-inverse .navbar-toggle:hover {
+	background-color: #000000;
+	}
+.navbar-inverse .navbar-toggle:focus{
+	background-color: #00A60A;
+	}
+.navbar-inverse .navbar-toggle {
+	
+	border:1px solid #ffffff;
+
+	} 
+a.dropdown-toggle{
+	width: 250px;
+}
+
+.container-fluid{
+	 min-height: 80vh !important;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+input:invalid {
+ box-shadow: 1px 1px 8px rgba(165, 12, 12, 0.89);
+ outline: none;
+}
+.form-control:focus {
+    border-color: #00A60A;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(30, 93, 30, 0.82);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(30, 93, 30, 0.82);
+}

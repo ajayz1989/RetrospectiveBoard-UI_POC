@@ -1,0 +1,1 @@
+var rBMainModule = angular.module("rBMainModule", ['angular-loading-bar','ngAnimate',"routingModule", "createBoardModule","loginModule","signUpModule","createUserModule", "viewBoardsModule","authenticationMainModule","viewTeamsModule","ngStorage"]);

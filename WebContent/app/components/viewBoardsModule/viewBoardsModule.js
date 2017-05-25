@@ -1,0 +1,1 @@
+var viewBoardsModule = angular.module("viewBoardsModule", ["viewBoardsController"]);

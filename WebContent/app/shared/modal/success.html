@@ -1,0 +1,39 @@
+
+<div class="Modal-box">
+
+	<div class="modal-header" id="modal-header">
+		<h3 class="modal-title">Edit Board</h3>
+	</div>
+	<div class="modal-body">
+		<!-- Main Container -->
+		<div>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Board Name </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="boardName"
+							ng-model="updatedBoard.board_name">
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<!-- Main Container ends here -->
+
+		<div>
+			<div class="alert alert-danger" role="alert" data-ng-hide="error">
+				<strong data-ng-bind="success"></strong>
+			</div>
+			<div class="alert alert-success" role="alert" data-ng-show='error'>
+				<strong data-ng-bind="success"></strong>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-success" ng-click="$close()">Ok</button>
+	</div>
+
+</div>

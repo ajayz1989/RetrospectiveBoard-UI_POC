@@ -1,0 +1,58 @@
+<div class="Modal-box">
+
+	<div class="modal-header">
+		<h3 class="modal-title">Create New Board</h3>
+	</div>
+	<div class="modal-body">
+		<!-- Main Container -->
+		<div>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Board Name </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="boardName"
+							data-ng-model="data.board_name" required="required"
+							autofocus="autofocus">
+					</div>
+				</div>
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Board Description </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="boardDescription"
+							data-ng-model="data.board_description" required="required">
+					</div>
+				</div>
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Associated Team </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="associatedTeam"
+							data-ng-model="data.board_associated_team">
+					</div>
+				</div>
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Associated Project </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control"	data-ng-model="data.board_associated_project" id="associatedProject" >
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		<!-- Main Container ends here -->
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-danger" type="button" ng-click="$close()"
+			autofocus="autofocus">Cancel</button>
+		<input type="submit" class="btn btn-success" ng-click="saveBoardModal(data,$event)" value="Save"/>
+	</div>
+
+</div>

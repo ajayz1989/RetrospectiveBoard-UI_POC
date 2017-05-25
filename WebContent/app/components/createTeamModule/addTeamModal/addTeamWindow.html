@@ -1,0 +1,59 @@
+<div class="Modal-box">
+
+	<div class="modal-header">
+		<h3 class="modal-title">Edit Board</h3>
+	</div>
+	<div class="modal-body">
+		<!-- Main Container -->
+		<div>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Team Name </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="boardName"
+							ng-model="updatedBoard.board_name">
+					</div>
+				</div>
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Description </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id=""
+							ng-model="updatedBoard.createdBy">
+					</div>
+				</div>
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Project </label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id=""
+							ng-model="updatedBoard.creation_date">
+					</div>
+				</div>
+				<div class="form-group" data-ng-show="true">
+
+					<label for="inputEmail3" class="col-sm-3 control-label">
+						Teams </label>
+					<div class="col-sm-5">
+						<input type="number" class="form-control" id=""
+							ng-model="updatedBoard.id">
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<!-- Main Container ends here -->
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-danger" type="button" ng-click="$close()"
+			autofocus="autofocus">Cancel</button>
+		<button class="btn btn-success" type="button"
+			ng-click="saveTeamModal(updatedBoard)">Save</button>
+	</div>
+
+</div>

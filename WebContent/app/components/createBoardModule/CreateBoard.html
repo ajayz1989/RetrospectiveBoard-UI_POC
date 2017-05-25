@@ -1,0 +1,69 @@
+<!--Main Container-->
+<div class="container-fluid col-md-12">
+	<div class="page-header">
+		<h2 id="tables">Create New Board</h2>
+	</div>
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+
+			<label for="inputEmail3" class="col-sm-3 control-label">
+				Board Name </label>
+			<div class="col-sm-5">
+				<input type="email" class="form-control" id="boardName"
+					ng-model="viewBoardName">
+			</div>
+		</div>
+		<div class="form-group">
+
+			<label for="inputEmail3" class="col-sm-3 control-label">
+				Description </label>
+			<div class="col-sm-5">
+				<input type="email" class="form-control" id="boardDescription"
+					ng-model="viewBoardDescription">
+			</div>
+		</div>
+		<div class="form-group">
+
+			<label for="inputEmail3" class="col-sm-3 control-label">
+				Associated Team </label>
+			<div class="col-sm-5">
+				<input type="email" class="form-control" id="boardDescription"
+					ng-model="viewBoardDescription">
+			</div>
+		</div>
+		<div class="form-group">
+
+			<label for="inputEmail3" class="col-sm-3 control-label">
+				Project </label>
+			<div class="col-sm-5">
+				<select class="form-control" id="projectSelect"
+					data-ng-model="viewProjectName" data-ng-change="showTeams()">
+					<option data-ng-repeat="(project, teams) in projectList"
+						value="{{project}}">{{project}}</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group" data-ng-show="showTeamName">
+
+			<label for="inputEmail3" class="col-sm-3 control-label">
+				Teams </label>
+			<div class="col-sm-5">
+				<select class="form-control" id="teamSelect"
+					data-ng-model="viewTeamName">
+					<option data-ng-default="Hello" data-ng-repeat="team in teamList"
+						value="{{team}}">{{team}}</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-sm-offset-4 col-sm-8">
+
+				<button type="submit" class="btn btn-default btn-success"
+					data-ng-click="clicked()">Create Board</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!--Main Container ends here-->
