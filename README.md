@@ -1,3 +1,6 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+This project only contains the UI Part based on AngularJS.
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+A Simple AngularJS(1.2) + Java REST API(Backend)  based web application developed for learning perspective.
+
+
+ 
